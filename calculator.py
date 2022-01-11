@@ -58,6 +58,7 @@ def func():
     if ask == "y":
       n1 = ans
     elif ask == "n":
+      stop = True
       func()
 func()
     
