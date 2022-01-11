@@ -47,10 +47,10 @@ operations = {
 
 def func():
   stop = False
-  n1 = int(input("First num: "))
+  n1 = float(input("First num: "))
   while stop is False:
     operation = input("Operation? ")
-    n2 = int(input("Second num: "))
+    n2 = float(input("Second num: "))
     cal = operations[operation]
     ans = cal(n1,n2)
     print(f"Ans={ans}")
