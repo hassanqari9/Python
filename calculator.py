@@ -44,8 +44,8 @@ operations = {
   "*" : mult,
   "/" : div,
 }
-stop = True
-while stop is True:
+
+def func():
   stop = False
   n1 = int(input("First num: "))
   while stop is False:
@@ -58,5 +58,6 @@ while stop is True:
     if ask == "y":
       n1 = ans
     elif ask == "n":
-      stop = True
+      func()
+func()
     
