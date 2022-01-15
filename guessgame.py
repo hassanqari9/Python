@@ -77,8 +77,8 @@ while(life > 0):
       print(f"Life:{life}")
       
     elif guess == random_number:
-      print("Correct guess")
+      print("You won 🎉")
       life = -1
 
 if life == 0:
-  print("You lost")
+  print("You lost 🔫")
