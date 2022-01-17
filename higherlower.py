@@ -328,7 +328,7 @@ def game():
   print(f"Compare A: {data_1['name']},   {data_1['description']}, {data_1['country']}\n")
   print("vs\n")
   print(f"Compare B: {data_2['name']}, {data_2['description']}, {data_2['country']}\n")
-  choice = input("Who has more followers? A or B: \n")
+  choice = input("Who has more followers? A or B: \n").upper()
   print("\n")
   c =  compare(data_1['follower_count'],data_2['follower_count'])
   if choice == c:
