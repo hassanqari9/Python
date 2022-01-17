@@ -325,6 +325,8 @@ score = 0
 def game():
   global data_1
   data_2 = random.choice(data)
+  while data_1==data_2:
+    data_1 = random.choice(data)
   print(f"Compare A: {data_1['name']},   {data_1['description']}, {data_1['country']}\n")
   print("vs\n")
   print(f"Compare B: {data_2['name']}, {data_2['description']}, {data_2['country']}\n")
